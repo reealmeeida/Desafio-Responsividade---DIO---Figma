@@ -1,0 +1,272 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap');
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 459px repeat(4, 1fr) 134px;
+    grid-template-areas: 
+    "header" "main" "main" "main" "main" "footer";
+}
+
+
+
+.grid {
+    background-color: #F6F6F6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+    grid-area: header;
+
+    background-image: url(images/HeaderBackgroundDesk.png) ;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 65px;
+}
+
+header h1 {
+    width: 313px;
+height: 112px;
+
+font-family: 'Luckiest Guy';
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 56px;
+text-align: center;
+
+color: #FFFFFF;
+padding-bottom: 20px;
+}
+
+header p {
+    width: 757px;
+height: 66px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+color: #FFFFFF;
+
+ 
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#whiteButton {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 52px;
+    width: 100%;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    background-color: #23272A;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 52px;
+    width: 100%;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div figure {
+    width: 607px;
+}
+
+main div {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+h2{
+
+    width: 329px;
+    height: 270px;
+    left: 623px;
+    top: 10px;
+    display: inline;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    
+    color: #23272A;
+    padding-bottom: 15px;
+}
+
+h3 {
+width: 329px;
+
+    left: 623px;
+    top: 10px;
+    display: inline;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    
+    color: #23272A;
+
+
+}
+
+main p {
+
+    width: 348px;
+    height: 88px;
+    left: 623px;
+    top: 296px;
+    display: inline;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #23272A;
+
+}
+
+#ac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#dd {
+    padding-top: 50px;
+}
+
+
+
+
+.ad {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad h3 {
+    padding-bottom: 20px;
+}
+
+
+#last {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#last p {
+    width: 802px;
+height: 44px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+color: #23272A;
+}
+
+#last img {
+    position: relative;
+    right: 20%;
+}
+
+main h1{
+    width: 608px;
+    height: 80px;
+    
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    
+    color: #23272A;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #23272A;
+    text-align: center;
+}
+
+footer img {
+    position: relative;
+    top: 35px;
+}
